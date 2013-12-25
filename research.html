@@ -60,7 +60,7 @@
           <div class="row row-offcanvas row-offcanvas-right">
             <div class="col-xs-12 col-sm-9">
               <p class="pull-right visible-xs">
-                <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+                <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas" data-target=".sidebar-nav">Expand</button>
               </p>
               <div class="page-header">
                 <h1>Research<small> Academic</small></h1>
@@ -70,7 +70,7 @@
                 </br></br></br>
                   <h3>Real-time robotic simulation in ROS and Gazebo</h3>
                   <h5>Guide:</h5><p>Prof. Homayoun Najjaran, University of British Columbia-Okanagan, Canada (May 2013 - August 2013)</br> PhD Guide: Morteza Farroksiar</p>
-                <h5>Overview:</h5>
+                <h5>Overview</h5>
                 <p>Research work undertaken as a <a href="http://www.mitacs.ca/globalink" target="_blank"> Mitacs Globalink fellow</a> at the Advanced Control and Integrated Systems (ACIS) Lab. The simulator was developed in Linux and ROS/Gazebo environment using XML and C++. Odometry, Velocity_Command and Laser messages are read in MATLAB from ROS. This gave the flexibility to test new planning and control algorithms in MATLAB directly on Gazebo without any need to convert the code to C++. In Gazebo, single or multiple robots with laser scanning sensors can be deployed on custom maps. 
                   </p>
                 <h5>Simulator Essentials</h5>
@@ -110,7 +110,7 @@
                 </br></br></br>
                   <h3>Low-cost,low-power and  high-voltage electrical circuit for Digital Microfluidics</h3>
                   <h5>Guide:</h5><p>Prof. Homayoun Najjaran, University of British Columbia-Okanagan, Canada (May 2013 - August 2013)</br> PhD Guide: Mohamed Yafia</p>
-                <h5>Overview:</h5>
+                <h5>Overview</h5>
                 <p>Another reserach project taken up at the Advanced Control and Integrated Systems (ACIS) Lab to develop a low-cost and low-power electrical system for digital microfluidic (also known as lab-on-chip devices) applications. The circuit uses a new technique to build 200Vp-p using minimal electrical componets. This work has the potential to reduce the size of present desktop set-ups for microfluidic research. All the power requirements are provided by two 5V batteries. Details of this project will be published soon, after additional testing of the working design. 
                   </p>
                 </div><!--/span-->
@@ -150,17 +150,52 @@
                 </br></br></br>
                   <h3>Manual Robot Control - Robocon 2011</h3>
                   <h5>Guide:</h5><p>Prof. Sandipan Bandyopadhyay, IIT Madras</p>
-                <h5>Overview:</h5>
+                <h5>Overview</h5>
                 <p>Member of Robocon team representing IIT Madras at the nationals of ABU Robocon, 2011 Pune. PlayStation-2 controller was customized to provide an easy interface for any angle motion of the 4-wheeled manual robot. </br> 
                 This is a video of our bot performing at the National Round in Pune, India:</p></br>
-                <iframe src="http://www.youtube.com/embed/KuvBwOO1Spw?rel=0" frameborder="0" height="360" width="640" allowfullscreen> </iframe>
+                <iframe src="http://www.youtube.com/embed/KuvBwOO1Spw?rel=0" frameborder="0" height="360" width="640" allowfullscreen style="margin: 0 auto;"> </iframe>
                 </div><!--/span-->
                 <div id="ride" class="col-lg-10">
                 </br></br></br>
                   <h3>Road Irregularity Detection and Estimation (RIDE)</h3>
                   <h5>Guide:</h5><p>Prof. C. Balaji, IIT Madras</p>
                 <h5>Overview</h5>
-                <p> </p>
+                <p>Providing good roads to citizens requires a robust real-time monitoring mechanism. Especially in a country like India that has one of the larget road networks in the world such a mechnism is a necessity. The existing road condition monitoring systems either lack in giving real-time data or area of coverage. This leads to poorly managed roads in cities and sub-urban areas.</br></br> RIDE has been demostrated to solve both problems simultaneously. An <em>accelerometer</em> is used on any vehicle to gather road condition signals. This data, along with vehicle position, is transmitted over the GPRS network to a server which runs learning algorithms to detect major road defects.</p></br></br>
+                <div><img src="./Pictures/ge-edison.png" width="700" height="400" class="img-rounded"></div>
+                <p><em>Prototype 1: Seected to the final round, GE-Edison Challenge 2012</em></p></br>
+                <h5>Electrical Modules</h5>
+                <ul>
+                  <li><a href="http://arduino.cc" target="_blank">Arduino</a>, to control interface with GPS, accelerometer and GPRS.
+                  <li>Accelerometer, communicate with Arduino using I<sup>2</sup>C protocol.</li>
+                  <li>GSM/GPRS, Arduino provides data over serial communication which is uploaded using TCP sockets to the server.</li>
+                  <li>GPS, position data communicated to Arduino.</li>
+                </ul>
+                </div><!--/span-->
+              </div><!--/row-->
+              <div class="page-header">
+                <h1>Industrial Research<small> Internships</small></h1>
+              </div>
+              <div class="row">
+                <div id="ge" class="col-lg-10">
+                </br></br></br>
+                  <h3>Simulation of Ultrasonic Waves across solid-liquid boundaries</h3>
+                  <h5>John F Welch Technology Center (JFWTC) GE, Bangalore</h5>
+                  <h5>Guide:</h5><p>Dr. Ganesan Bhaskaran and Satheesh Jeyaraman (June 2012 - July 2012)</p>
+                <h5>Overview</h5>
+                <p>Steel pipes are used for a variety of applications, one example would be in the oil and natural gas intustry. These pipe transport materials of high economic value and it is important ot ensure that the pipes are well maintained. Non-destructive testing of pipes using ultrasonic waves has proved to be one of the best techniques for structural health monitoring. Simulation of ultrasonic waves is one essential step to understand this phenomenon. The internship project involved:</p>
+                <ul>
+                  <li>Developing analytical models for wave proagation across different boundaries.</li>
+                  <li>Use Abaqus6.11 finte element simulation software to draw geometry required and perform 2D and 3D simulations. Validate the results by running multiple test cases.</li>
+                  <li>Building python scripts using given APIs to perform complex tasks, such as angled beams - based on huygens principles. Finally, being able to automate multiple simulations using these APIs.</li> 
+                </div><!--/span-->
+                <div id="iql" class="col-lg-10">
+                </br></br></br>
+                  <h3>Designed and prototyped an accelerometer based gesture controlled robot</h3>
+                  <h5>Indigo Quotient Labs, Bangalore</h5>
+                  <h5>Embedded systems design team (June 2011 - July 2011)</h5>
+                <h5>Overview</h5>
+                <p>Designed an accelerometer based multi-axis gesture controller for a mobile robot. Analog signals from the accelerometer were read by a ATMega16 microcontroller to caliberate and recognize specific movement combiniations. Once a coomand is recognized, the appropriate response is tranmitted wirelessly over an RF band to a mobile robot. This has many interesting applications in control of mechanical devices.</p>
+                
                 </div><!--/span-->
               </div><!--/row-->
             </div><!--/span-->
@@ -179,8 +214,8 @@
                   <li><a href="#robocon">Robocon Manual Control</a></li>
                   <li><a href="#ride">RIDE</a></li>
                   <li>Industrial Research</li>
-                  <li><a href="#robocon">General Electric</a></li>
-                  <li><a href="#ride">IQ Labs</a></li>
+                  <li><a href="#ge">General Electric</a></li>
+                  <li><a href="#iql">IQ Labs</a></li>
                 </ul>
               </div><!--/.well -->
             </div><!--/span-->
@@ -189,7 +224,7 @@
           <hr>
 
           <footer>
-            <p class="text-center">&copy; Shehzaman Salim Khatib 2013 | shehzi.1@gmail.com | Bootstrap Design:<a href="http://siddharthswaminathan.in"> Siddharth</p>
+            <p class="text-center">&copy; Shehzaman Salim Khatib 2013 | shehzi.1@gmail.com | Design Assistance:<a href="http://siddharthswaminathan.in"> Siddharth</p>
           </footer>
 
         </div><!--/.container-->
