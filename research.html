@@ -43,7 +43,7 @@
             <li><a href="./education.html"><span class="glyphicon glyphicon-book"></span> Education</a></li>
             <li class="active"><a href="./research.html"><span class="glyphicon glyphicon-cog"></span> Research</a></li>
             <li><a href="./resume.html"><span class="glyphicon glyphicon-list"></span> Resume</a></li>
-            <li><a href="./webops.html"><span class="glyphicon glyphicon-globe"></span> WebOps</a></li>
+            <!--<li><a href="./webops.html"><span class="glyphicon glyphicon-globe"></span> WebOps</a></li>-->
             <li><a href="./contact.html"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
           </ul>
         </div><!-- /.nav-collapse -->
@@ -57,8 +57,12 @@
           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas" data-target=".sidebar-nav">Side-Bar</button>
           </p>
+          <!--
           <div class="page-header">
             <h1>Research<small> Academic</small></h1>
+          </div>-->
+          <div id="projects" class="page-header">
+            <h1>Projects<small> Courses and Competitions</small></h1>
           </div>
           <div class="row">
             <div id="arliss" class="col-lg-10">
@@ -127,12 +131,12 @@
                 </tr>
               </table>
             </div>
-          </div>
+          <!--</div>
 
           <div id="projects" class="page-header">
             <h1>Projects<small> Courses and Competitions</small></h1>
           </div>
-          <div class="row">
+          <div class="row">-->
             <div id="lrc" class="col-lg-10">
               </br></br></br>
               <h3>Lunar Rover Challenge</h3>
@@ -216,12 +220,11 @@
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
           <div class="sidebar-nav">
             <ul class="nav nav-pills nav-stacked affix">
-              <li>Research</li>
+              <li>Projects</li>
               <li><a href="#arliss">ARLISS</a></li>
               <li><a href="#robocon">Robocon</a></li>
               <li><a href="#nss">Wrist-Flexer</a></li>
               <li><a href="#rsi">RSI-C</a></li>
-              <li>Projects</li>
               <li><a href="#lrc">Lunar Rover Challenge</a></li>
               <li><a href="#snav">Smart Navigation</a></li>
               <li>Industrial Research</li>
@@ -247,5 +250,15 @@
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/offcanvas.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-40935046-3', 'iitm.ac.in');
+      ga('send', 'pageview');
+
+    </script>
   </body>
 </html>
