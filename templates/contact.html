@@ -1,0 +1,72 @@
+{% extends 'index.html' %}
+{% block title %}
+    <title>Contact | S.R.Manikandasriram &middot; IIT Madras</title>
+{% endblock %}
+{% block extra_style %}
+    <style text="type/css">
+    .contact_icons{
+      float: left;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    </style>
+{% endblock %}
+{% block content %}
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Side-Bar</button>
+          </p>
+          <div class="row" style="margin-top:20px;">
+            <div id="contact">
+              <div class="col-lg-6">
+                <br/><br/>
+                <p>
+                  <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                    <input class="form-control preventCopy" type="text" value="srmanikandasriram [at] gmail [dot] com" readonly="disabled">
+                  </div>
+                </p>
+                <p>
+                  <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                    <input class="form-control preventCopy" type="email" value="ee11b127 [at] ee [dot] iitm [dot] ac [dot] in" readonly="disabled">
+                  </div>
+                </p>
+                <p>
+                  <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-signal"></span></span>
+                    <input class="form-control preventCopy" type="text" value="+91 996-251-3029" readonly="disabled">
+                  </div>
+                </p>
+              <br/>
+              </div>
+              <div class="col-lg-10 table-responsive">
+                <table class="table table-bordered table-hover">
+                  <tr>
+                    <th><span class="glyphicon glyphicon-home"></span> Address</th>
+                  </tr>
+                  <tr>
+                    <td>#E4, Allied's Elegant Enclave, Swaminathan Nagar 3<sup>rd</sup> main road, Kottivakkam, Chennai 600 041</td>
+                  </tr>
+                </table>
+              </div>
+              <div id="social" class="col-xs-offset-3 col-xs-6 col-md-offset-4 col-md-5">
+                <a href="https://www.facebook.com/manikandasriram" target="_blank"><img class="img-responsive contact_icons" src="./img/facebook_logo.gif" /></a>
+                <a href="https://plus.google.com/u/0/115817947244411659858/" target="_blank"><img class="img-responsive contact_icons" src="./img/google_plus_logo.png" /></a>
+                <a href="http://www.linkedin.com/in/srmanikandasriram" target="_blank"><img class="img-responsive contact_icons" src="./img/linked_in_logo.png"/></a>
+                <a href="https://github.com/srmanikandasriram" target="_blank"><img class="img-responsive contact_icons" src="./img/github_logo.png" /></a>
+              </div>
+            </div>
+          </div><!--/row-->
+        </div><!--/span-->
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+          <div class="sidebar-nav">
+            <ul class="nav nav-pills nav-stacked affix">
+              <li class="active"><a href="#contact">Contact Information</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+      </div><!--/row-->
+{% endblock %}

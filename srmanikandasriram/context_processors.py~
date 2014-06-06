@@ -1,0 +1,4 @@
+from django.conf import settings
+
+def static_url(request):
+	return {'static_url': settings.STATIC_URL}
