@@ -1,0 +1,18 @@
+body{
+  background: url("../img/grey.png");
+}
+.navbar{
+  background: black;
+  font-family: "Ubuntu", sans-serif;
+  color: #0f0 !important;
+}
+.ubuntu{
+  font-family: "Ubuntu", sans-serif;
+}
+a.list-group-item{
+  background-color: rgba(255,255,255,0.2);
+}
+a.list-group-item.active{
+  background-color: rgba(66,139,202,0.75);
+  border-color: rgba(66,139,202,0.75);
+}
