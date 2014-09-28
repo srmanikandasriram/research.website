@@ -8,7 +8,7 @@
     <meta name="description" content="S.R.Manikandasriram | Senior Undergraduate, Department of Electrical Engineering, IIT Madras">
     <meta name="keywords" content="manikandasriram, mani, s.r.manikandasriram, iitm, iit madras, robotics, robocon, webops, webops club, web developer, wiki-it, LRC, shaastra, electrical, control, lego, georgia tech">
     <meta name="author" content="S.R.Manikandasriram">
-    <link rel="shortcut icon" href="./img/iitm_favicon.png">
+    <link rel="shortcut icon" href="./img/favicon.jpg">
 
     <title>Research | S.R.Manikandasriram &middot; IIT Madras</title>
 
@@ -71,11 +71,11 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="./about.html"><span class="glyphicon glyphicon-user"></span> About Me</a></li>
+            <!-- <li><a href="./about.html"><span class="glyphicon glyphicon-user"></span> About Me</a></li> -->
             <li><a href="./acads.html"><span class="glyphicon glyphicon-book"></span> Academics</a></li>
             <li><a href="./competitions.html"><span class="glyphicon glyphicon-dashboard"></span> Competitions</a></li>
             <li class="active"><a href="./research.html"><span class="glyphicon glyphicon-cog"></span> Research</a></li>
-            <li><a href="./files/CV_2pg.pdf" target="_blank"><span class="glyphicon glyphicon-list"></span> CV</a></li>
+            <li><a href="./files/CV_research.pdf" target="_blank"><span class="glyphicon glyphicon-list"></span> CV</a></li>
             <li><a href="./webops.html"><span class="glyphicon glyphicon-cloud"></span> WebOps</a></li>
             <li><a href="./contact.html"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
           </ul>
@@ -95,13 +95,26 @@
           <div class="row">
             <div id="lego1" class="col-lg-10">
               <br/><br/><br/>
-              <h3>2-wheel Self-balancing Robot<small> using Lego Mindstorms&reg; Kit </small></h3>
+              <h3>Design Testbed for coordinated control<small> using Lego Mindstorms&reg; Kit </small></h3>
               <h5><strong>Guide:</strong></h5><p> Prof. Bharath Bhikkaji, IIT Madras </p>
+              <ul>
+                <li>Developed a ROS package for interfacing LEGO EV3 robots with a ROS network using Raspberry Pi.</li>
+                <li>Setup Navigation stack for a team of 3 LEGO robots working on a ROS network.</li>
+                <li>Currently working on vision-based localization using an aerial camera and coloured markers to correct for drift in odometry.</li>
+              </ul>
             </div>
             <div id="lego2" class="col-lg-10">
               <br/><br/><br/>
-              <h3>Pendlum on a cart system<small> using Lego Mindstorms&reg; Kit </small></h3>
+              <h3>Cost-effective control laboratory<small> for undergraduate students </small></h3>
               <h5><strong>Guide:</strong></h5><p> Prof. Bharath Bhikkaji, IIT Madras </p>
+              <ul>
+                <li>Designed 3 benchmark control experiments for an undergraduate control lab course.</li>
+                <li>Demonstrated feasibility of using LEGO Mindstorms kits as a pedagogical tool.</li>
+                <li>Gave video lectures for demonstrating and explaining the theory behind the experiments.</li>
+              </ul>
+              <div class="videoWrapper">
+                <iframe width="560" height="315" src="//www.youtube.com/embed/CrEEPE-KSYI" frameborder="0" allowfullscreen></iframe>
+              </div>
             </div>
           </div>
           <div id="courseProjects" class="page-header">
@@ -113,7 +126,10 @@
               <h3>Application of Max-flow min-cut theorem for Computer Vision <small> Term paper for Data Structures and Algorithms course</small></h3>
               <h5><strong>Course Instructor:</strong></h5><p>Prof. Nitin Chandrachoodan, IIT Madras </p>
               <h5><strong>Abstract</strong></h5>
-              <p> This paper reviews the Max-ﬂow min-cut theorem based graph cut algorithms particularly the Ford-Fulkerson algorithm and its applications in Computer Vision and other ﬁelds.</p>
+              <ul>
+                <li>Wrote a review paper on max-flow min-cut theorem based graph-cut algorithms.</li>
+                <li>Analysed the Ford-Fulkerson algorithm and its applications in Computer vision.</li>
+              </ul>
               <table class="table table-bordered table-hover">
                 <tr>
                   <td>The term paper can be found <a href="./files/DSA/Term_Paper.pdf" target="_blank ">here. <span class="glyphicon glyphicon-download"></span></a></td>
@@ -126,12 +142,7 @@
               <h3>Implementation of DQPSK in GRC<small> Term project for Communication Systems course </small></h3>
               <h5><strong>Course Instructor:</strong></h5><p>Prof. Andrew Thangaraj, IIT Madras </p>
               <h5><strong>Abstract</strong></h5>
-              <p> We were asked to implement the model of communication of a π/4 DQPSK and π/8 Differential 8 PSK on GNU Radio Companion(GRC). Our code consisted of modulation of data, implementation of root-raised cosine filters, up-conversion to passband, transmission, down-conversion to baseband and slicing. We also tried implementing sub-carriers with QAM modulation.</p>
-              <table class="table table-bordered table-hover">
-                <tr>
-                  <td>The term paper can be found <a href="./files/DSA/Term_Paper.pdf" target="_blank ">here. <span class="glyphicon glyphicon-download"></span></a></td>
-                </tr>
-              </table>
+              <p> We were asked to implement the model of communication of a π/4 DQPSK and π/8 Differential 8 PSK on GNU Radio Companion(GRC). Our code consisted of modulation of data, implementation of root-raised cosine filters, up-conversion to passband, transmission, down-conversion to baseband and slicing. We also implemented sub-carriers with QAM modulation.</p>
               <hr class="separator">
             </div>
             <div id="analog" class="col-lg-10">
@@ -139,19 +150,12 @@
               <h3>Spectrum Analyzer<small> Term project for Analog Laboratoy course </small></h3>
               <h5><strong>Course Instructor:</strong></h5><p>Prof. Nagendra Krishnapura, IIT Madras </p>
               <h5><strong>Abstract</strong></h5>
-              <p> The goal of this 3-week project was to build a spectrum analyser that was capable of displaying the spectrum of the input signal from 0.5 to 5kHz when connected to a simple oscilloscope in time-mode. The project tested our understanding of many concepts that we had learnt from the analog circuits course that was taught the previous semester. The spectrum analyser consisted of a second order low pass filter, a doubly balanced mixer, linear ramp generator, local oscillator with frequency sweeping capabilities, a high-Q band pass filter and an envelope detector.
-
-              The adjacent picture shows the spectrum analyser module that I rigged up using simple elements like LF347 (Op-amp), 555 timer, MC1496 (Doubly balanced mixer), a few BJTs, diodes, resistors and capacitors.</p>
-              <table class="table table-bordered table-hover">
-                <tr>
-                  <td>The term paper can be found <a href="./files/DSA/Term_Paper.pdf" target="_blank ">here. <span class="glyphicon glyphicon-download"></span></a></td>
-                </tr>
-              </table>
+              <p> The goal of this 3-week project was to build a spectrum analyser that was capable of displaying the spectrum of the input signal from 0.5 to 5kHz when connected to a simple oscilloscope in time-mode. The project tested our understanding of many concepts that we had learnt from the analog circuits course that was taught the previous semester. The spectrum analyser consisted of a second order low pass filter, a doubly balanced mixer, linear ramp generator, local oscillator with frequency sweeping capabilities, a high-Q band pass filter and an envelope detector.</p>
               <hr class="separator">
             </div>
             <div id="nss" class="col-lg-10">
               </br></br></br>
-              <h3>Wrist-Flexer</h3>
+              <h3>Wrist-Flexer <small>as part of National Service Scheme (NSS)</small></h3>
               <h5><strong>Guide:</strong></h5>
               <p>Prof. Manivannan, IIT Madras</p>
               <h5><strong>Overview</strong></h5>
@@ -177,7 +181,11 @@
               <h3>Research Science Initiative Chennai 2010</h3>
               <h5><strong>Guide:</strong></h5><p>Prof. Prasantha K Tripathy, IIT Madras (May - June 2010)<sup>&dagger;</sup></p>
               <h5><strong>Overview</strong></h5>
-              <p> In this project, we study Black Holes and their properties, by interpreting the solutions of the equations that govern them.</p>
+              <ul>
+                <li>RSI - Chennai is associated with, and modelled on, the Research Science Institute, that is sponsored by the Center for Excellence in Education based in McLean, Virginia, USA and run in collaboration with the Massachusetts Institute of Technology.</li>
+                <li>Selected as one among 40 top students from the city schools for a 5-week summer research camp with guest lectures and workshops from leading universities in the state.</li>
+                <li>Analysed the properties of Black Holes by studying the solutions to Einstein’s field equations. This required understanding very advanced concepts in physics and mathematics.</li>
+              </ul>
               <p class="pull-right"><small><i>&dagger; during 11<sup>th</sup> grade</i></small></p>
               <table class="table table-bordered table-hover">
                 <tr>
@@ -237,13 +245,13 @@
             <a href="#researchProjects" class="list-group-item active">
               Research Projects
             </a>
-            <a href="#lego1" class="list-group-item">2-wheel self-balancing robot</a>
-            <a href="#lego2" class="list-group-item">Pendulum on a cart</a>
+            <a href="#lego1" class="list-group-item">Design Testbed</a>
+            <a href="#lego2" class="list-group-item">Control Lab experiments</a>
             <a href="#courseProjects" class="list-group-item active">
               Course Projects
             </a>
-            <a href="#dsa" class="list-group-item">DSA</a>
-            <a href="#grc" class="list-group-item">GRC</a>
+            <a href="#dsa" class="list-group-item">Data Structures and Algorithms</a>
+            <a href="#grc" class="list-group-item">Communication Systems</a>
             <a href="#analog" class="list-group-item">Spectrum Analyzer</a>
             <a href="#nss" class="list-group-item">Wrist-Flexer</a>
             <a href="#projects" class="list-group-item active">
@@ -261,7 +269,7 @@
       <hr>
 
       <footer>
-        <p class="text-center">&copy; S.R.Manikandasriram 2014 | <a href="mailto:srmanikandasriram@gmail.com">srmanikandasriram@gmail.com</a> | Design Guidance: <a href="http://shehzaman.github.io">Shehzaman Salim Khatib</a> | Last Update: 07<sup>th</sup> June 2014</p>
+        <p class="text-center">&copy; S.R.Manikandasriram 2014 | <a href="mailto:srmanikandasriram@gmail.com">srmanikandasriram@gmail.com</a> | Design Guidance: <a href="http://shehzaman.github.io">Shehzaman Salim Khatib</a> | Last Update: 29<sup>th</sup> September 2014</p>
       </footer>
 
     </div><!--/.container-->
