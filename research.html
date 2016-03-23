@@ -97,13 +97,67 @@
               <h3>Autonomous 3D Mapping of unknown structures<small> Senior Thesis </small></h3>
               <h5><strong>Guide:</strong> Prof. Jerome Le Ny (Polytechnique Montreal) </h5>
               <h5><strong>Co-Guide:</strong> Prof. Bharath Bhikkaji (IIT Madras) </h5>
-              <ul>
+<!--               <ul>
               <li> Developed novel active sensing strategies for autonomously building a 3D model of a specific structure with no prior information using a mobile ground robot carrying a depth-sensing camera.</li>
               <li>Our algorithm autonomously determines the size and boundaries of the structure by following the perimeter and automatically detects and add missing parts to construct a complete 3D model.</li>
-              </ul>
+              </ul> -->
+              <p>
+                <strong>Abstract: </strong>
+                We developed a system capable of autonomously mapping the visible part of a bounded three-dimensional 
+                structure using a mobile ground robot equipped with a depth sensor. We propose motion planning strategies to determine appropriate 
+                successive viewpoints and attempt to fill holes automatically in a point cloud produced by the sensing and perception layer. The 
+                emphasis is on accurately reconstructing a 3D model of a structure of finite size rather than mapping large open environments, with 
+                applications for example in architecture, construction and inspection. The proposed algorithms do not require any initialization in 
+                the form of a mesh model or a bounding box. 
+                <!-- We compare via simulations the performance of our policies to classic frontier based 
+                exploration algorithm. In addition, we illustrate the efficacy of our approach for different structure sizes, levels of 
+                localization accuracy and range of the depth sensor. -->
+              </p>
+              <div class="row img-slider">
+                <div class="col-md-8 col-md-offset-1">
+                  <div id="pics1" class="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#pics1" data-slide-to="0" class="active"></li>
+                      <li data-target="#pics1" data-slide-to="1"></li>
+                      <li data-target="#pics1" data-slide-to="2"></li>
+                    </ol>
+                    <section class="carousel-inner">
+                      <div class="item active"><img src="./files/ActiveSLAM/House_Original.png" width="600" height="400" class="img-rounded">
+                        <center><i>Original model of the House simulated using Gazebo</i></center>
+                      </div>
+                      <div class="item"><img src="./files/ActiveSLAM/House_Model.png" width="600" height="400" class="img-rounded">
+                        <center><i>Reconstructed model using our policies</i></center>
+                      </div>
+                      <div class="item"><img src="./files/ActiveSLAM/House_FBE_Model.png" width="600" height="400" class="img-rounded">
+                        <center><i>Reconstructed model using classic Frontier Based Exploration</i></center>
+                      </div>
+                    </section>
+                    <a class="left carousel-control" href="#pics1" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a class="right carousel-control" href="#pics1" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                  </div>
+                </div>
+              </div>
+              <br/><br/>
               <div class="videoWrapper">
                 <iframe width="560" height="315" src="//www.youtube.com/embed/TOK4rXRIAzA" frameborder="0" allowfullscreen></iframe>
               </div>
+            </div>
+            <div id="mbr" class="col-lg-10">
+              <br/><br/><br/>
+              <h3>FIRA RoboSoccer<small> SimuroSot league  </small></h3>
+              <h5>Team Saahas, Center for Innovation, IIT Madras</h5>
+              <ul>
+                <li>Developed an AI agent capable of playing a simulated 5vs5 RoboSoccer game.</li>
+                <li>Adopted a two level Strategy-Role framework for the decision making and implemented real-time path planning algorithms.</li>
+                <li>Implemented a Case Based Retrieval system for action selection for the defender agents as a course project in Memory Based Reasoning in AI under Prof. Sutanu Chakraborti (IIT Madras)</li>
+              </ul>
+              <center><img src="./files/MBR/RoboSoccer_Field.png" style="width:90%;height:auto;"class="img-rounded"></center>
+              <p><center>Simualted RoboSoccer Game with 1 Attacker, 2 Defenders and 1 Goalie.</center></p></br>
+              <table class="table table-bordered table-hover">
+                <tr>
+                  <td>The project report for the design of the CBR system can be found <a href="./files/MBR/Team19-projectreport.pdf">here. <span class="glyphicon glyphicon-download"></span></a></td>
+                </tr>
+              </table>
             </div>
             <div id="lego1" class="col-lg-10">
               <br/><br/><br/>
@@ -149,43 +203,6 @@
               </div>
             </div>
           </div>
-<!--           <div id="courseProjects" class="page-header">
-            <h1>Course Projects<small> </small></h1>
-          </div>
-          <div class="row">
-            <div id="dsa" class="col-lg-10">
-              </br></br></br>
-              <h3>Application of Max-flow min-cut theorem for Computer Vision <small> Term paper for Data Structures and Algorithms course</small></h3>
-              <h5><strong>Course Instructor:</strong></h5><p>Prof. Nitin Chandrachoodan, IIT Madras </p>
-              <h5><strong>Abstract</strong></h5>
-              <ul>
-                <li>Wrote a review paper on max-flow min-cut theorem based graph-cut algorithms.</li>
-                <li>Analysed the Ford-Fulkerson algorithm and its applications in Computer vision.</li>
-              </ul>
-              <table class="table table-bordered table-hover">
-                <tr>
-                  <td>The term paper can be found <a href="./files/DSA/Term_Paper.pdf" target="_blank ">here. <span class="glyphicon glyphicon-download"></span></a></td>
-                </tr>
-              </table>
-              <hr class="separator">
-            </div>
-            <div id="grc" class="col-lg-10">
-              </br></br></br>
-              <h3>Implementation of DQPSK in GRC<small> Term project for Communication Systems course </small></h3>
-              <h5><strong>Course Instructor:</strong></h5><p>Prof. Andrew Thangaraj, IIT Madras </p>
-              <h5><strong>Abstract</strong></h5>
-              <p> We were asked to implement the model of communication of a π/4 DQPSK and π/8 Differential 8 PSK on GNU Radio Companion(GRC). Our code consisted of modulation of data, implementation of root-raised cosine filters, up-conversion to passband, transmission, down-conversion to baseband and slicing. We also implemented sub-carriers with QAM modulation.</p>
-              <hr class="separator">
-            </div>
-            <div id="analog" class="col-lg-10">
-              </br></br></br>
-              <h3>Spectrum Analyzer<small> Term project for Analog Laboratoy course </small></h3>
-              <h5><strong>Course Instructor:</strong></h5><p>Prof. Nagendra Krishnapura, IIT Madras </p>
-              <h5><strong>Abstract</strong></h5>
-              <p> The goal of this 3-week project was to build a spectrum analyser that was capable of displaying the spectrum of the input signal from 0.5 to 5kHz when connected to a simple oscilloscope in time-mode. The project tested our understanding of many concepts that we had learnt from the analog circuits course that was taught the previous semester. The spectrum analyser consisted of a second order low pass filter, a doubly balanced mixer, linear ramp generator, local oscillator with frequency sweeping capabilities, a high-Q band pass filter and an envelope detector.</p>
-              <hr class="separator">
-            </div>
-          </div> -->
           <div id="projects" class="page-header">
             <h1>Technical Projects<small> </small></h1>
           </div>
@@ -207,24 +224,6 @@
               </table>
               <hr class="separator">
             </div>
-<!--             <div id="rsi" class="col-lg-10">
-              </br></br></br>
-              <h3>Research Science Initiative Chennai 2010</h3>
-              <h5><strong>Guide:</strong></h5><p>Prof. Prasantha K Tripathy, IIT Madras (May - June 2010)<sup>&dagger;</sup></p>
-              <h5><strong>Overview</strong></h5>
-              <ul>
-                <li>RSI - Chennai is associated with, and modelled on, the Research Science Institute, that is sponsored by the Center for Excellence in Education based in McLean, Virginia, USA and run in collaboration with the Massachusetts Institute of Technology.</li>
-                <li>Selected as one among 40 top students from the city schools for a 5-week summer research camp with guest lectures and workshops from leading universities in the state.</li>
-                <li>Analysed the properties of Black Holes by studying the solutions to Einstein’s field equations. This required understanding very advanced concepts in physics and mathematics.</li>
-              </ul>
-              <p class="pull-right"><small><i>&dagger; during 11<sup>th</sup> grade</i></small></p>
-              <table class="table table-bordered table-hover">
-                <tr>
-                  <td>A presentation on the project can be found <a href="./files/RSI-C/Throwing_Light_on_Black_Holes.pdf" target="_blank ">here. <span class="glyphicon glyphicon-download"></span></a></td>
-                </tr>
-              </table>
-              <hr class="separator">
-            </div> -->
             <div id="snav" class="col-lg-10">
               </br></br></br>
               <h3>Smart Navigation</h3>
@@ -264,7 +263,7 @@
               <p> Apart from this, the internship also included development of a Simulation Framework for performing 2D Magnetostatic simulations using Ansys Parametric Design Language (APDL).</p>
               <table class="table table-bordered table-hover">
                 <tr>
-                  <td>The internship report can be found <a href="./files/GE/GE_Internship_Report.pdf" target="_blank">here. <span class="glyphicon glyphicon-download"></span></a>
+                  <td>The redacted internship report can be found <a href="./files/GE/GE_Internship_Report.pdf" target="_blank">here. <span class="glyphicon glyphicon-download"></span></a>
                   </td>
                 </tr>
               </table>
@@ -278,6 +277,7 @@
               Research Projects
             </a>
             <a href="#activeslam" class="list-group-item">Mitacs Globalink Internship</a>
+            <a href="#mbr" class="list-group-item">FIRA RoboSoccer</a>
             <a href="#lego1" class="list-group-item">EV3 ROS</a>
             <a href="#lego2" class="list-group-item">Control Lab experiments</a>
 <!--             <a href="#courseProjects" class="list-group-item active">
